@@ -64,4 +64,22 @@ resource "aws_iam_group_membership" "Testing" {
   group = aws_iam_group.iam-group[2].name
 }
 
+module "vpc" {
+
+  source                = "./vpc-ec2"
+  vpc_cidr              = var.vpc_cidr
+  proj_name             = var.proj_name
+  app-sn-cidr           = var.app-sn-cidr
+  web-sn-cidr           = var.web-sn-cidr
+  db-sn-cidr            = var.db-sn-cidr
+  azs                   = var.azs
+  igw_cidr              = var.igw_cidr
+  user_name             = var.user_name
+  instance_type         = var.instance_type
+  iam-ec2-s3-role       = var.iam-ec2-s3-role
+  instance_profile_name = var.iam_instance_profile
+  
+}
+
+
 
