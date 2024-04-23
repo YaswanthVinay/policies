@@ -123,10 +123,15 @@ resource "aws_security_group" "web-sg" {
 data "aws_ami" "ami_name" {
   most_recent = true
   owners      = ["amazon"]
+  # filter {
+  #   name   = "name"
+  #   values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-*"]
+  # }
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-*"]
+    values = ["amzn2-ami-hvm-*"]
   }
+
 
   filter {
     name   = "virtualization-type"
