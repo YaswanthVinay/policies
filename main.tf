@@ -78,7 +78,7 @@ module "vpc" {
   instance_type         = var.instance_type
   iam-ec2-s3-role       = var.iam-ec2-s3-role
   instance_profile_name = var.iam_instance_profile
-  
+
 }
 
 

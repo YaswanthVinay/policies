@@ -117,5 +117,5 @@ resource "aws_iam_instance_profile" "ec2-s3-instance-profile" {
 variable "iam_instance_profile" {
   description = "The name of the IAM instance profile to associate with the EC2 instances."
   type        = string
-  default = "instance-profile"
+  default     = "instance-profile"
 }

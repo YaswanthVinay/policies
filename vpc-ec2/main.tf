@@ -123,6 +123,7 @@ resource "aws_security_group" "web-sg" {
 data "aws_ami" "ami_name" {
   most_recent = true
   owners      = ["amazon"]
+  # you cam use Either Linux / Ubuntu.. i have added both the filters here(Ubuntu and Amazon Linux)
   # filter {
   #   name   = "name"
   #   values = ["ubuntu/images/hvm-ssd/ubuntu-focal-20.04-*"]
