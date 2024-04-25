@@ -52,7 +52,7 @@ To deploy the infrastructure:
 
 1. Clone this repository to your local machine.
 2. Navigate to the `VPC-EC2` folder.
-3. Configure your AWS credentials in `provider.tf`.
+3. Configure your AWS credentials .
 4. Run `terraform init` to initialize the Terraform configuration.
 5. Run `terraform plan` to view the proposed changes.
 6. Run `terraform apply` to apply the Terraform configuration and create the infrastructure.
